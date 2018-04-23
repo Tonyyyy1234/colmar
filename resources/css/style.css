@@ -1,0 +1,38 @@
+/* Universal Styles */
+
+.container {
+  margin: 32px 24px;
+  border: solid green;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  margin: 0 8px 0 24px;
+}
+
+.logo {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav ul{
+  display: flex;
+}
+
+.nav ul li {
+  margin-right: 16px;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
+.academy {
+  opacity: .5;
+}

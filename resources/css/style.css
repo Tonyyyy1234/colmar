@@ -2,7 +2,18 @@
 
 .container {
   margin: 32px 24px;
-  border: solid green;
+  /* border: solid green; */
+  display: inline-block;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Header Section */
@@ -35,4 +46,37 @@ header {
 
 .academy {
   opacity: .5;
+}
+
+/* Top Banner */
+
+.banner {
+  background-color: #d8d8d8;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  margin-right: 24px;
+}
+
+.learn {
+  display: flex;
+  align-items: center;
+}
+
+.everyday {
+  color: #4a4a4a;
+  width: 30%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.everyday span {
+  background-color: #4a4a4a;
+  color: #d8d8d8;
+  text-align: center;
+  padding: 8px 0;
 }

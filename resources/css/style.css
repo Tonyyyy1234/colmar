@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 .container {
-  margin: 32px 24px;
+  margin: 32px 0 32px 24px;
   /* border: solid green; */
   display: inline-block;
 }
@@ -12,8 +12,21 @@ h1 {
 }
 
 h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.2;
 }
 
 /* Header Section */
@@ -32,11 +45,13 @@ header {
   flex-grow: 1;
 }
 
-.nav ul{
+.nav ul,
+footer ul{
   display: flex;
 }
 
-.nav ul li {
+.nav ul li,
+footer ul li{
   margin-right: 16px;
 }
 
@@ -50,11 +65,12 @@ header {
 
 /* Top Banner */
 
-.banner {
+.banner,
+.learning {
   background-color: #d8d8d8;
 }
 
-.banner img {
+.banner img{
   width: 60%;
   height: auto;
   margin-right: 24px;
@@ -80,3 +96,131 @@ header {
   text-align: center;
   padding: 8px 0;
 }
+
+/* Information Section */
+
+.info,
+.thesis-section {
+  display: flex;
+}
+
+.practice,
+.video-column {
+  width: 60%;
+  overflow: hidden;
+}
+
+.practice img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.practicing h2, .practicing p {
+  margin-bottom: 24px;
+}
+
+.campus,
+.fisma {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 24px;
+}
+
+.information,
+.fisma-box {
+  display: flex;
+  align-items: center;
+}
+
+.information img,
+.fisma img{
+  width: 39%;
+  height: auto;
+  margin: 16px;
+}
+
+.extra p {
+  padding: 8px 0;
+}
+
+.orientation img{
+  margin-top: 0;
+}
+
+/* learning section */
+
+.learning-container {
+  padding: 32px 56px 16px 56px;
+}
+
+.learning-container h2{
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.learning-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.field-box {
+  width: 30%;
+  overflow: hidden;
+  background-color: white;
+  margin: 16px;
+}
+
+.field-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.field-box h3 {
+  padding: 16px;
+}
+
+.field-box h4 {
+  padding: 0 0 8px 16px;
+}
+
+.field-box p {
+  padding: 0 0 24px 16px;
+}
+
+/* Thesis Section */
+
+.thesis-header {
+  text-align: center;
+  padding-top: 32px;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.fisma {
+  justify-content: flex-start;
+}
+
+.design {
+  background-color: #d8d8d8;
+}
+
+/* footer */
+
+footer {
+  border-top: 1px solid #d8d8d8;
+  display: flex;
+  padding: 16px 8px 50px 24px;
+}
+
+.copy {
+  flex-grow: 1;
+}
+
+/* media queries */

@@ -63,6 +63,10 @@ footer ul li{
   opacity: .5;
 }
 
+.ios-header {
+  display: none;
+}
+
 /* Top Banner */
 
 .banner,
@@ -95,6 +99,10 @@ footer ul li{
   color: #d8d8d8;
   text-align: center;
   padding: 8px 0;
+}
+
+.mobile-pic {
+  display: none;
 }
 
 /* Information Section */
@@ -168,7 +176,8 @@ footer ul li{
 }
 
 .field-box {
-  width: 30%;
+  /* width: 30%; */
+  width: 350px;
   overflow: hidden;
   background-color: white;
   margin: 16px;
@@ -203,6 +212,10 @@ video {
   height: auto;
 }
 
+.video-column h2 {
+  margin: 24px 0 8px 0;
+}
+
 .fisma {
   justify-content: flex-start;
 }
@@ -224,3 +237,169 @@ footer {
 }
 
 /* media queries */
+
+@media only screen and (max-width: 800px){
+  .information img {
+    width: 60%;
+    height: auto;
+    margin: 16px;
+  }
+
+  .information {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 470px){
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* mobile header */
+
+   header {
+     display: none;
+   }
+
+   .ios-header {
+     height: 64px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+   }
+
+   /* mobile banner */
+
+   .banner img{
+     width: 100%;
+     height: auto;
+     margin: 0;
+   }
+
+   .learn {
+     flex-direction: column;
+   }
+
+   .everyday {
+     width: 100%;
+     height: 250px;
+     justify-content: space-between;
+     margin: 32px 0;
+   }
+
+   .everyday h1, h3, span {
+     margin: 0 16px;
+   }
+
+   /* Mobile Info */
+
+   .info {
+     margin: 16px 16px 0 16px;
+   }
+
+   .practice {
+     display: none;
+   }
+
+   .info-pic {
+     display: none;
+   }
+
+   .mobile-pic {
+     display: block;
+   }
+
+   .campus {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 0;
+   }
+
+   .information {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+   }
+
+   .information img {
+     width: 100%;
+     height: auto;
+     margin: 0 0 16px 0;
+   }
+
+   .extra p{
+     padding: 8px 16px;
+   }
+
+   .extra a{
+     padding-left: 16px;
+   }
+
+   .info-box{
+     margin-bottom: 32px;
+   }
+
+   /* Mobile Learning Section */
+
+   .field-box img,
+   .field-box h4,
+   .field-box p {
+     display: none;
+   }
+
+   .learning {
+     background-color: white;
+   }
+
+   .learning-container {
+     padding: 0;
+   }
+
+   .learning-flex-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+
+   .field-box {
+     width: 100%;
+     /* overflow: hidden; */
+     background-color: #d8d8d8;
+     margin: 0 16px 8px 16px;
+   }
+
+   .field-box h3 {
+     padding: 16px;
+   }
+
+   /* mobile thesis */
+
+   .fisma {
+     display: none;
+   }
+
+   .video-column h2,
+   .video-column p {
+     display: none;
+   }
+
+   .video-column {
+     width: 100%;
+     margin: 16px 0 24px 0;
+   }
+
+   /* mobile footer */
+
+   .footer-links {
+     display: none;
+   }
+
+   footer {
+     border-top: none;
+     padding: 16px;
+   }
+}
